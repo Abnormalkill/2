@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="" alt="LOGO">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">SIGN UP</a></li>
+            </ul>
+            <ul class="nav-menu">
+                <li class="hideOnMobile"><a href="#">HOME</a></li>
+                <li class="hideOnMobile"><a href="#">BLOG</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT US</a></li>
+                <li class="hideOnMobile"><a href="#">CONTACT US</a></li>
+                <li class="hideOnMobile"><a href="#">LOG IN</a></li>
+                <li class="hideOnMobile"><a href="#">SIGN UP</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cont1">
+            <h3>Azem nhi mra.</h3>
+            <h1>Azem Dead</h1>
+        </div>
+        <div class="cont2">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="cont3">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <h3><b>© 2024 [Abnork.com]. All rights reserved.</b></h3>
+    </footer>
+</body>
+</html>
